@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public float jumpImpulse = 10f;
 
     TouchingDirections touchingDirections;
+
+    Mana playerMana;
 
     Dmgable dmgable;
 
@@ -110,7 +112,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    
+
+
 
     Rigidbody2D rb;
     Animator animator;
@@ -121,6 +124,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         touchingDirections = GetComponent<TouchingDirections>();
         dmgable = GetComponent<Dmgable>();
+        playerMana = GetComponent<Mana>();
     }
 
     private void FixedUpdate()
@@ -182,12 +186,44 @@ public class PlayerController : MonoBehaviour
     {
         if(context.started)
         {
-            animator.SetTrigger(AnimationStrings.attack);
+            if(playerMana.Maana < 100)
+            {
+                playerMana.Maana += 5;
+                animator.SetTrigger(AnimationStrings.attack);
+            }
+            if(playerMana.Maana == 100)
+            {
+                animator.SetTrigger(AnimationStrings.attack);
+            }
+            
         }
     }
-    
     public void OnHit(int damage, Vector2 knockback)
     {
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
+    }
+    public void OnAttackSP(InputAction.CallbackContext context)
+    {
+        if (context.started && playerMana.Maana >= 50)
+        {
+            playerMana.Maana -= 50;
+            animator.SetTrigger(AnimationStrings.attackSP);
+        }
+    }
+    public void OnDefend(InputAction.CallbackContext context)
+    {
+        if (playerMana.Maana >= 0)
+        {
+            if(context.started && dmgable.IsDefend == false && playerMana.Maana >= 20)
+            {
+                playerMana.Maana -= 20;
+                animator.SetTrigger(AnimationStrings.defend);
+                dmgable.IsDefend = true;
+            }
+            if (context.canceled && dmgable.IsDefend == true && playerMana.Maana <= 100)
+            {
+                dmgable.IsDefend = false;
+            }
+        }
     }
 }

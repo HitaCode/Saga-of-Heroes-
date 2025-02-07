@@ -6,6 +6,99 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartGame.unity
+    guid: 497671ab0eecc694f95ea76588ecf1f2
+  - enabled: 1
+    path: Assets/Scenes/FirstStory.unity
+    guid: 906ea1a9e3d71fb44ac6dd5f15b6fe51
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/SecondStoryy.unity
+    guid: ece3566a91080db48bed81e9f536ed78
+  - enabled: 1
+    path: Assets/Scenes/Level_2.unity
+    guid: 02cc97d4b2620ee409a4030ae64bc9e3
+  - enabled: 1
+    path: Assets/Scenes/ThirdStory.unity
+    guid: 4514ea50579d9fb409ba4abbe563fee3
+  - enabled: 1
+    path: Assets/Scenes/Level_3.unity
+    guid: 9f5cbe488a0f4724c98954dc4b968adb
+  - enabled: 1
+    path: Assets/Scenes/FourthStory.unity
+    guid: 8c091a69fad6a5341a116dff604d14ad
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: d7174beffd654064fa53b3d503860661
+  - enabled: 1
+    path: Assets/Scenes/FinalStory.unity
+    guid: 072d3ae7ebe7eb74aa764e9a557bca49
+  - enabled: 1
+    path: Assets/Scenes/YouWinScene.unity
+    guid: 3b94bc434e986ba43b907aeb82b36b7a
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: 5c667dbe3461ad349891a6ca56639c76
+  - enabled: 1
+    path: Assets/Scenes/QuitScene.unity
+    guid: 3a751eb0ee9e5604ebafc1fed80114b0
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 68d9a6e4b73fb724eb0a35ea5cf1cd1d
+  - enabled: 1
+    path: Assets/Scenes/ChooseMap2.unity
+    guid: a49865622e71fe64ca346b044bd4b03e
+  - enabled: 1
+    path: Assets/Scenes/ChooseMap.unity
+    guid: 75037aea9d2f6da4ab2e3e8d40bbc5b5
+  - enabled: 1
+    path: Assets/Scenes/Setting.unity
+    guid: 27fa2dd85e0426a4fa5e1c94ba5d938e
+  - enabled: 1
+    path: Assets/Scenes/ChooseCharacter.unity
+    guid: f62ef91404ffd5d48a94dbd6bb3406fe
+  - enabled: 1
+    path: Assets/Scenes/FirstStory2.unity
+    guid: 8be92f9f3cea8684b8226cc444ab0cdf
+  - enabled: 1
+    path: Assets/Scenes/Level_1_Character2.unity
+    guid: a376cc913395fbc489c51fa5c7e6bf2d
+  - enabled: 1
+    path: Assets/Scenes/SecondStory2.unity
+    guid: 8631206321bba6a40926c79873e63626
+  - enabled: 1
+    path: Assets/Scenes/Level_2_Character2.unity
+    guid: 21fffd1c8aabe684d9ea0b86930dad46
+  - enabled: 1
+    path: Assets/Scenes/ThirdStory2.unity
+    guid: 99e0197b6694b8040956827f46a01bae
+  - enabled: 1
+    path: Assets/Scenes/Level_3_Character2.unity
+    guid: 5d35bc6ff4442004b930fc8871b5455d
+  - enabled: 1
+    path: Assets/Scenes/FourthStory2.unity
+    guid: 7d2ec12c8315dcc4badbf6941eeaf017
+  - enabled: 1
+    path: Assets/Scenes/Level4_Character2.unity
+    guid: 2b09473faa47e2b41967872ea2405bea
+  - enabled: 1
+    path: Assets/Scenes/FinalStory2.unity
+    guid: 1b37ff609f7b8fb4dbdca1c7fe67dc92
+  - enabled: 1
+    path: Assets/Scenes/ChooseMode.unity
+    guid: 77f77a8b8bf37be47951c22640257667
+  - enabled: 1
+    path: Assets/Scenes/ChooseCharacter2.unity
+    guid: 586664ac956556847b17678206de2e2c
+  - enabled: 1
+    path: Assets/Scenes/ChallengeMap.unity
+    guid: 0e2b4a585adf93e4fadec04ccc3f08cf
+  - enabled: 1
+    path: Assets/Scenes/YouWinChallenge.unity
+    guid: cffdc31c423de34448300d4b6010ba7b
+  - enabled: 1
+    path: Assets/Scenes/ChallengeMap2.unity
+    guid: 3fc28db9e42670c42acbf2104a6e08cb
   m_configObjects: {}

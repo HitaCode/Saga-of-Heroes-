@@ -97,7 +97,6 @@ public class DemonLord : MonoBehaviour
         if(!dmgable.LockVelocity)
         {
             if (CanMove)
-         
                 rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x + (walkAcceleration * walkDirectionVector.x * Time.fixedDeltaTime), -maxSpeed, maxSpeed), rb.velocity.y);
             else
                 rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
@@ -123,7 +122,6 @@ public class DemonLord : MonoBehaviour
     {
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
-
     public void OnCliffDetected()
     {
         if(touchingDirections.IsGrounded)
